@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rhetix — Speak Smarter with AI",
+  title: "Rhetix | Speak Smarter with AI",
   description:
     "Rhetix helps you speak and write with clarity and confidence using AI-crafted phrases.",
   keywords: [
@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     "communication app",
     "ai phrases",
   ],
+  icons: "/rhetix.ico",
 };
 
 export default function RootLayout({
