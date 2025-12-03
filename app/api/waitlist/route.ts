@@ -77,29 +77,30 @@ export async function POST(request: NextRequest) {
         to: trimmedEmail,
         subject: "Welcome to Rhetix 👋",
         html: `
-          <div style="font-family: system-ui, -apple-system, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; color: #111;">
+        
+         <div style="font-family: system-ui, -apple-system, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; color: #111;">
   <h1 style="font-size: 24px; font-weight: 600; color: #000; margin-bottom: 20px;">
     Hey,
   </h1>
 
   <p style="line-height: 1.6; color: #333; margin-bottom: 16px;">
-    Thanks for joining the Rhetix early access. I’m really glad you’re here.
+    Thanks for joining the Rhetix early access.
   </p>
 
   <p style="line-height: 1.6; color: #333; margin-bottom: 16px;">
-    Many people feel they have great ideas, but sometimes the right words don’t come out at the right moment. It can be frustrating when you know exactly what you want to say, but the expression doesn’t reflect your true thoughts.
+    You know that moment when you know exactly what you want to say, but the words just don't come out right? It's frustrating. And that's exactly what Rhetix is here to solve.
   </p>
 
   <p style="line-height: 1.6; color: #333; margin-bottom: 16px;">
-    You’re not alone. A lot of people want to express themselves clearly, speak with confidence and use the right words in the right situation. That’s exactly why Rhetix exists: to help you communicate with clarity and ease.
+    Before we launch, I have one simple question for you:
   </p>
 
-  <p style="line-height: 1.6; color: #333; margin-bottom: 16px;">
-    Before we launch, I’d love to ask you one simple question. What makes communication hard for you at the moment? What do you wish you could express better?
+  <p style="line-height: 1.6; color: #333; margin-bottom: 20px; font-weight: 600; font-size: 16px;">
+    What makes communication hard for you right now?
   </p>
 
   <p style="line-height: 1.6; color: #333; margin-bottom: 20px;">
-    You can reply directly to this email. I read every message personally and your feedback will shape Rhetix.
+    Reply directly to this email. I read everything personally and your feedback will directly shape the product.
   </p>
 
   <p style="line-height: 1.6; color: #333; margin-top: 32px;">
@@ -109,7 +110,7 @@ export async function POST(request: NextRequest) {
   </p>
 
   <p style="margin-top: 32px; padding-top: 16px; border-top: 1px solid #eee; color: #999; font-size: 12px; line-height: 1.5;">
-    P.S. If this message landed in your spam folder, you can mark it as “Not Spam” to make sure you receive the next updates.
+    P.S. If this landed in spam, mark it as "Not Spam" so you don't miss future updates.
   </p>
 
   <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; color: #999; font-size: 12px; text-align: center;">
@@ -117,7 +118,6 @@ export async function POST(request: NextRequest) {
     <p>You received this email because you signed up for early access at rhetix.com</p>
   </div>
 </div>
-
 
 
         `,
